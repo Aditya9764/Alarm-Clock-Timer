@@ -32,7 +32,7 @@ def alarm(seconds , sound):
 
 minutes = int(input("How many minutes to wait: "))
 seconds = int(input("How many seconds to wait: "))
-total_seconds = minutes + seconds
+total_seconds = minutes * 60 + seconds
 sound = int(input("What alarm would you like (1-4): "))
 
 alarm(total_seconds)
